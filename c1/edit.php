@@ -95,7 +95,7 @@ $barang = mysqli_fetch_assoc($result);
                 <label class="form-label">Harga Barang:</label>
                 <div class="input-group">
                   <span class="input-group-text">Rp</span>
-                <input type="number" name="harga_barang" class="form-control" required>
+                <input type="number" name="harga_barang" value="<?php echo $barang['harga_barang']; ?>">
             </div>
                 </div>
             <button type="submit" class="btn btn-primary">Update Barang</button>
